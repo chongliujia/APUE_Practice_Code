@@ -5,4 +5,10 @@
 
 #define CL_OPEN "open"
 
-int csopen(char *, int);
+extern char    errmsg[];
+extern int     oflag;
+extern char    *pathname;
+
+int cli_args(char *, int);
+void handle_request(char *, int, int);
+
