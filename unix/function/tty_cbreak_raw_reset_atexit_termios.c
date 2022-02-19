@@ -107,7 +107,7 @@ tty_raw(int fd)
         return (-1);
     }
 
-    ttystate    = RAN;
+    ttystate    = RAW;
     ttysavefd   = fd;
     return (0);
 }
